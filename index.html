@@ -129,6 +129,28 @@
       margin: 0 auto;
       line-height: 1.6;
     }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 2.5rem 2rem;
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+      overflow: hidden;
+    }
   </style>
 </head>
 <body>
@@ -145,6 +167,9 @@
       <h1>M.A.R.G.A Project Portal</h1>
       <p>Multi-Role Civic Infrastructure Operating System for MPLADS Project Verification, Intelligence & Auditing</p>
     </header>
+
+    <div class="grid">
+    </div>
   </div>
 
 </body>

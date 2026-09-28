@@ -211,6 +211,100 @@
       width: 100%;
       border: 1px solid transparent;
     }
+
+    .action-btn i {
+      transition: transform 0.3s ease;
+    }
+
+    /* Portal Box Styling */
+    .card-portal .icon-wrapper {
+      background: rgba(56, 189, 248, 0.12);
+      color: var(--portal-accent);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+    }
+    .card-portal:hover {
+      transform: translateY(-6px);
+      border-color: rgba(56, 189, 248, 0.5);
+      box-shadow: 0 20px 40px -15px var(--portal-glow);
+    }
+    .card-portal:hover .icon-wrapper {
+      transform: scale(1.08);
+      background: var(--portal-gradient);
+      color: #060913;
+    }
+    .card-portal .action-btn {
+      color: var(--portal-accent);
+      background: rgba(56, 189, 248, 0.08);
+      border-color: rgba(56, 189, 248, 0.2);
+    }
+    .card-portal:hover .action-btn {
+      background: var(--portal-gradient);
+      color: #060913;
+      border-color: transparent;
+    }
+    .card-portal:hover .action-btn i {
+      transform: translateX(4px);
+    }
+
+    /* AI Models Box Styling */
+    .card-ai .icon-wrapper {
+      background: rgba(192, 132, 252, 0.12);
+      color: var(--ai-accent);
+      border: 1px solid rgba(192, 132, 252, 0.25);
+    }
+    .card-ai:hover {
+      transform: translateY(-6px);
+      border-color: rgba(192, 132, 252, 0.5);
+      box-shadow: 0 20px 40px -15px var(--ai-glow);
+    }
+    .card-ai:hover .icon-wrapper {
+      transform: scale(1.08);
+      background: var(--ai-gradient);
+      color: #ffffff;
+    }
+    .card-ai .action-btn {
+      color: var(--ai-accent);
+      background: rgba(192, 132, 252, 0.08);
+      border-color: rgba(192, 132, 252, 0.2);
+    }
+    .card-ai:hover .action-btn {
+      background: var(--ai-gradient);
+      color: #ffffff;
+      border-color: transparent;
+    }
+    .card-ai:hover .action-btn i {
+      transform: translateX(4px);
+    }
+
+    /* YouTube Box Styling */
+    .card-yt .icon-wrapper {
+      background: rgba(248, 113, 113, 0.12);
+      color: var(--yt-accent);
+      border: 1px solid rgba(248, 113, 113, 0.25);
+    }
+    .card-yt:hover {
+      transform: translateY(-6px);
+      border-color: rgba(248, 113, 113, 0.5);
+      box-shadow: 0 20px 40px -15px var(--yt-glow);
+    }
+    .card-yt:hover .icon-wrapper {
+      transform: scale(1.08);
+      background: var(--yt-gradient);
+      color: #ffffff;
+    }
+    .card-yt .action-btn {
+      color: var(--yt-accent);
+      background: rgba(248, 113, 113, 0.08);
+      border-color: rgba(248, 113, 113, 0.2);
+    }
+    .card-yt:hover .action-btn {
+      background: var(--yt-gradient);
+      color: #ffffff;
+      border-color: transparent;
+    }
+    .card-yt:hover .action-btn i {
+      transform: translateX(4px);
+    }
   </style>
 </head>
 <body>

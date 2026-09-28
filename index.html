@@ -305,6 +305,26 @@
     .card-yt:hover .action-btn i {
       transform: translateX(4px);
     }
+
+    footer {
+      margin-top: 4.5rem;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 2rem;
+    }
+
+    @media (max-width: 992px) {
+      .grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 0 auto;
+      }
+      header h1 {
+        font-size: 2.5rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -368,6 +388,10 @@
         </span>
       </a>
     </div>
+
+    <footer>
+      M.A.R.G.A Civic Infrastructure & Intelligence Platform &bull; Deployed Evaluation Portal
+    </footer>
   </div>
 
 </body>

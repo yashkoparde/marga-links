@@ -151,6 +151,66 @@
       position: relative;
       overflow: hidden;
     }
+
+    .card-header-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.75rem;
+    }
+
+    .icon-wrapper {
+      width: 64px;
+      height: 64px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.75rem;
+      transition: transform 0.35s ease;
+    }
+
+    .card-tag {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.35rem 0.75rem;
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--text-muted);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .card-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      color: #ffffff;
+    }
+
+    .card-desc {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 2.25rem;
+      flex-grow: 1;
+    }
+
+    .action-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 0.85rem 1.5rem;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+      width: 100%;
+      border: 1px solid transparent;
+    }
   </style>
 </head>
 <body>
@@ -169,6 +229,20 @@
     </header>
 
     <div class="grid">
+      <!-- Box 1: Web Portal Link -->
+      <a href="index.html" class="card card-portal">
+        <div class="card-header-row">
+          <div class="icon-wrapper">
+            <i class="fa-solid fa-layer-group"></i>
+          </div>
+          <span class="card-tag">Core Application</span>
+        </div>
+        <h2 class="card-title">Web Portal</h2>
+        <p class="card-desc">Access the 6 multi-role stakeholder portals including MP Sanctioning, Collector Approvals, Implementing Agency Disbursal, and Public Transparency.</p>
+        <span class="action-btn">
+          Open Web Portal <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </span>
+      </a>
     </div>
   </div>
 
